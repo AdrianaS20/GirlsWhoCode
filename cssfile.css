@@ -1,0 +1,22 @@
+body {
+  background-color: #dfdbd3;
+}
+h1 {
+  text-align: center;
+  background-color: #a7a0a0;
+  border-style: solid;
+  border-color: #9a9691;
+}
+p {
+  font-family: "Palatino Linotype", "Book Antiqua", serif;
+}
+
+div {
+  font-family:"Palatino Linotype", "Book Antiqua", serif;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

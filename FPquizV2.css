@@ -55,7 +55,8 @@
 
 
 
-body {margin:25px;
+body {
+  margin:20px;
 	font-family: 'Noticia Text', serif;
 }
 
@@ -87,8 +88,7 @@ div.container {
 }
 
 
-
-.waterfall{
+.watergif{
   width: 100%;
   height: 100px;
 }
@@ -169,14 +169,12 @@ div.container {
   color: white;
 }
 
-
-
 body, html {
     height: 100%;
 }
 
 /* The hero image */
-.waterfall {
+.watergif {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("water.gif");
 
@@ -293,23 +291,30 @@ body, html {
   to {opacity: 1}
 }
 
-#after_submit {
-  visibility: hidden;
-}
-
 h2 {
-  margin-left: 20px;
+	padding: 10px;
+	width: 300px;
+	border-style: dotted;
+	border-color: #135E67;
+	border-radius: 20px;
+  margin-left: 5px;
+	margin-bottom: 1px;
+  text-align: center;
 }
-#quiz {
-  margin-left: 10px;
- /* background: #135E67; */
-  padding: 10px 10px 10px 10px;
-  width: 400px;
-  border-radius: 20px;
-  float: left;
+#quizLeft {
+	clear: none;
+  width: 100px;
+  float: left; /* What side all the questions appear */
 }
 
-#button {
+#quizRight{
+	clear: none;
+  width: 300px;
+  float: left; /* What side all the questions appear */
+  margin-top: 56px;
+}
+
+#button { /* submit button */
   background: #135E67;
   border: none;
   border-radius: 5px;
@@ -317,11 +322,15 @@ h2 {
   color: white;
   font-size: 16px;
   font-family: 'Noticia text', sans-serif;
+  text-align: center;
   transition-duration: .5s;
   margin-top: 15px;
+	margin-bottom: 15px;
+	width: 25%;
+  margin-left: auto;
 }
 
-#button:hover {
+#button:hover { /* submit button */
   background: #025357;
   border: 1px solid black;
   color: white;
@@ -330,10 +339,59 @@ h2 {
 
 #after_submit {
   visibility: hidden;
-  padding: 10px 20px 10px 20px;
-  width: 400px;
+  padding: 10px 20px 10px 10px;
+  width: 1000px;
   border-radius: 20px;
   float: bottom;
-  margin-left: 20px;
-  font-size: 30px;
+  font-size: 20px;
+}
+
+#instructions {
+	width: 1010px;
+	margin-top: 10px;
+  margin-left: 5px;
+}
+
+.form-radio
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #f1f1f1;
+     color: #fff;
+     top: 10px;
+     height: 30px;
+     width: 30px;
+     border: 0;
+     border-radius: 50px;
+     cursor: pointer;
+     margin-right: 7px;
+     outline: none;
+}
+.form-radio:checked::before
+{
+     position: absolute;
+     font: 13px/1 'Noticia Text', serif;
+     left: 11px;
+     top: 7px;
+     content: '\02143';
+     transform: rotate(40deg);
+}
+.form-radio:hover
+{
+     background-color: #025357;
+}
+.form-radio:checked
+{
+     background-color: #135E67;
+}
+label
+{
+     font: 15px/1.7 'Noticia Text', serif;
+     color: #333;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     cursor: pointer;
 }

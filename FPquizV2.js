@@ -1,25 +1,25 @@
 function check () {
 
-  var question1 = document.quiz.question1.value;
-  var question2 = document.quiz.question2.value;
-  var question3 = document.quiz.question3.value;
-  var question4 = document.quiz.question4.value;
-  var question5 = document.quiz.question5.value;
-  var question6 = document.quiz.question6.value;
-  var question7 = document.quiz.question7.value;
-  var question8 = document.quiz.question8.value;
-  var question9 = document.quiz.question9.value;
-  var question10 = document.quiz.question10.value;
-  var question11 = document.quiz.question11.value;
-  var question12 = document.quiz.question12.value;
-  var question13 = document.quiz.question13.value;
-  var question14 = document.quiz.question14.value;
-  var question15 = document.quiz.question15.value;
-  var question16 = document.quiz.question16.value;
-  var question17 = document.quiz.question17.value;
-  var question18 = document.quiz.question18.value;
-  var question19 = document.quiz.question19.value;
-  var question20 = document.quiz.question20.value;
+  var question1 = document.quizLeft.question1.value;
+  var question2 = document.quizLeft.question2.value;
+  var question3 = document.quizLeft.question3.value;
+  var question4 = document.quizLeft.question4.value;
+  var question5 = document.quizLeft.question5.value;
+  var question6 = document.quizLeft.question6.value;
+  var question7 = document.quizLeft.question7.value;
+  var question8 = document.quizLeft.question8.value;
+  var question9 = document.quizLeft.question9.value;
+  var question10 = document.quizLeft.question10.value;
+  var question11 = document.quizRight.question11.value;
+  var question12 = document.quizRight.question12.value;
+  var question13 = document.quizRight.question13.value;
+  var question14 = document.quizRight.question14.value;
+  var question15 = document.quizRight.question15.value;
+  var question16 = document.quizRight.question16.value;
+  var question17 = document.quizRight.question17.value;
+  var question18 = document.quizRight.question18.value;
+  var question19 = document.quizRight.question19.value;
+  var question20 = document.quizRight.question20.value;
   var score = 0;
 
     if (question1 == "0"){
@@ -82,10 +82,10 @@ function check () {
     else if (question10 == "Once a week"){
       score++;
     }
-    if (question11 == "I bring it to Advanced Auto Parts for recycling"){
+    if (question11 == "Always"){
       score+=2;
     }
-    else if (question11 == "I recycle it myself"){
+    else if (question11 == "Sometimes"){
       score++;
     }
     if (question12 == "Yes, I bring my own reusable bag each time"){
@@ -106,10 +106,10 @@ function check () {
     else if (question14 == "I used to"){
       score++;
     }
-    if (question15 == "No, I always use them in my compost"){
+    if (question15 == "I use rechargable batteries"){
       score+=2;
     }
-    else if (question15 == "I sometimes add them to my compost"){
+    else if (question15 == "I put them in my freezer"){
       score++;
     }
     if (question16 == "Always"){
@@ -143,13 +143,14 @@ function check () {
       score++;
     }
 
-var fScore = (score/40) * 100;
+var fScore = (score/30) * 100;
 var finalScore = fScore.toFixed(0);
 
-var results = ["Awesome! You've proven yourself to be an environmentally-conscious person, so keep up the good work!",
-  "Overall, you're doing a good job in preserving our environment, but there's always room for improvement:",
-  "While this low score means you're not helping the state of our planet, there are always ways to improve."
-];
+var results = [
+  "Awesome! You've proven yourself to be an environmentally-conscious person, so keep up the good work! Meanwhile, check out our page 'How You Can Help' to read about other ways you could continue benefitting the environment.",
+  "Overall, you're doing a good job in preserving our environment, but there's always room for improvement. To read about other ways you can be more eco-friendly check out our page 'How You Can Help'",
+  "Sadly, your habits are not doing any favors to the state of our planet, so it's best to check out our page 'How You Can Help' to learn about eco-friendly living before it's too late."
+  ];
 
 var range;
 
